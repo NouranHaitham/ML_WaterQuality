@@ -83,46 +83,43 @@ After preprocessing the data, you can train the models by executing the train_mo
 ```bash
 python train_models.py
 ```
+## **Usage**
 
-## Usage
-1. Exploratory Data Analysis (EDA):
-Run the data_analysis.ipynb notebook to visualize the dataset, check for missing values, and analyze the relationships between features and the target variable (potability).
+1. **Exploratory Data Analysis (EDA)**:
+   Run the `data_analysis.ipynb` notebook to visualize the dataset, check for missing values, and analyze the relationships between features and the target variable (potability).
 
-2. Data Preprocessing:
-The preprocessing.py script handles missing value imputation, outlier detection, and feature scaling. You can modify the script for additional preprocessing steps if needed.
+2. **Data Preprocessing**:
+   The `preprocessing.py` script handles missing value imputation, outlier detection, and feature scaling. You can modify the script for additional preprocessing steps if needed.
 
-3. Model Training:
-Use train_models.py to train multiple machine learning models, including K-Nearest Neighbors (KNN), Decision Trees, and Random Forests. You can specify hyperparameter tuning options in the script.
+3. **Model Training**:
+   Use `train_models.py` to train multiple machine learning models, including K-Nearest Neighbors (KNN), Decision Trees, and Random Forests. You can specify hyperparameter tuning options in the script.
 
-4. Model Evaluation:
-After training the models, the script outputs accuracy, precision, recall, F1-score, and confusion matrix for each model to help you evaluate their performance.
+4. **Model Evaluation**:
+   After training the models, the script outputs accuracy, precision, recall, F1-score, and confusion matrix for each model to help you evaluate their performance.
 
-## Technologies Used
+## **Technologies Used**
 
-- Python: Core programming language.
-- Pandas: Data manipulation and analysis.
-- NumPy: Numerical operations.
-- Scikit-learn: Machine learning models and utilities.
-- Matplotlib & Seaborn: Data visualization.
-- SMOTE: Balancing the dataset.
-- GridSearchCV: Hyperparameter tuning for optimal model performance.
+- **Python**: Core programming language.
+- **Pandas**: Data manipulation and analysis.
+- **NumPy**: Numerical operations.
+- **Scikit-learn**: Machine learning models and utilities.
+- **Matplotlib & Seaborn**: Data visualization.
+- **SMOTE**: Balancing the dataset.
+- **GridSearchCV**: Hyperparameter tuning for optimal model performance.
 
-## Results
+## **Results**
 
 The best performing model (KNN with n_neighbors = 23) achieved the following metrics on the test set:
+- **Accuracy**: 79.5%
+- **Precision**: 81.3%
+- **Recall**: 76.9%
+- **F1-Score**: 79.0%
 
-Accuracy: 79.5%
-Precision: 81.3%
-Recall: 76.9%
-F1-Score: 79.0%
+## **Future Improvements**
 
-## Future Improvements
-
-* Explore additional models such as XGBoost or LightGBM.
-* Implement feature selection techniques to reduce dimensionality.
-* Further tuning of hyperparameters using RandomizedSearchCV.
-* Deployment of the model as an API for real-time water potability predictions.
-
-
+- Explore additional models such as XGBoost or LightGBM.
+- Implement feature selection techniques to reduce dimensionality.
+- Further tuning of hyperparameters using RandomizedSearchCV.
+- Deployment of the model as an API for real-time water potability predictions.
 
 
